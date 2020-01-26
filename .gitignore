@@ -1,9 +1,0 @@
-.DS_Store
-node_cache
-node_modules
-.idea
-.vscode
-npm-debug.log
-dist
-dev
-package-lock.json
