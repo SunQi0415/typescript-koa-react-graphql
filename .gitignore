@@ -30,3 +30,4 @@ server/package-lock.json
 server/yarn.lock
 server/node_modules
 server/dist
+server/logs

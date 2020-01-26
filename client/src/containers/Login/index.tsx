@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'antd';
 // import 'styled-components';
 import "./index.scss";
-import DingLogin from '../../components/login/ding.login';
+// import DingLogin from '../../components/login/ding.login';
 import NormalLogin from '../../components/login/normal.login';
 
 export default function Login() {
@@ -16,9 +16,9 @@ export default function Login() {
     if (way === 'normal') {
       return <NormalLogin onChangeLogin={changeLoginWay} />
     }
-    if (way === 'ding') {
-      return <DingLogin onChangeLogin={changeLoginWay}></DingLogin>
-    }
+    // if (way === 'ding') {
+    //   return <DingLogin onChangeLogin={changeLoginWay}></DingLogin>
+    // }
   }
 
   return (
@@ -28,9 +28,9 @@ export default function Login() {
           <Button type="link" size="large" style={way === 'normal' ? {color: '#1890ff'} : {color: '#000'}} onClick={() => {
             changeLoginWay('normal')
           }}>密码登录</Button>
-          <Button type="link" size="large" style={way === 'ding' ? {color: '#1890ff'} : {color: '#000'}} onClick={() => {
+          {/* <Button type="link" size="large" style={way === 'ding' ? {color: '#1890ff'} : {color: '#000'}} onClick={() => {
             changeLoginWay('ding')
-          }}>钉钉登录</Button>
+          }}>钉钉登录</Button> */}
         </header>
         <main>
           {

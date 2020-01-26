@@ -18,7 +18,6 @@ import {
 import { dingdingConfig } from '../config/oAuth.config';
 import { getManager, getRepository } from "typeorm";
 import { UserDing } from '../entity/mysql/user.dingding.entity';
-import redis from '../config/redis.config';
 
 @Controller('/api/user/dingding')
 export default class {
