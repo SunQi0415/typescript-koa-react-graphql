@@ -1,0 +1,7 @@
+[2020-01-23T20:56:14.222] [ERROR] error - BadRequestError: 用户名或密码错误！
+    at Object.throw (/Users/ujipin/Desktop/dahai/fe-spider/server/node_modules/koa/lib/context.js:97:11)
+    at Object.<anonymous> (/Users/ujipin/Desktop/dahai/fe-spider/server/src/controller/user.controller.ts:80:16)
+    at step (/Users/ujipin/Desktop/dahai/fe-spider/server/src/controller/user.controller.ts:52:23)
+    at Object.next (/Users/ujipin/Desktop/dahai/fe-spider/server/src/controller/user.controller.ts:33:53)
+    at fulfilled (/Users/ujipin/Desktop/dahai/fe-spider/server/src/controller/user.controller.ts:24:58)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
