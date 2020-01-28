@@ -1,9 +1,9 @@
 // 不同环境设置不同配置
-// const ENV = process.env.NODE_ENV || 'dev';
+// const ENV = process.env.NODE_ENV || 'development';
 
 // mysql配置
 const mysqlEnvConfig = {
-  dev: {
+  development: {
     type: "mysql",
     host: "localhost",
     port: 3306,
@@ -40,7 +40,7 @@ const mysqlEnvConfig = {
 
 // mongodb 配置
 const MongoEnvConfig = {
-  dev: {
+  development: {
     type: "mongodb",
     database: "test",
     host: "localhost",
@@ -75,7 +75,7 @@ const MongoEnvConfig = {
   }
 }
 
-const ENV = process.env.NODE_ENV || 'dev';
+const ENV = process.env.NODE_ENV || 'development';
 
 // @ts-ignore
 let MySqlConfig = mysqlEnvConfig[ENV];

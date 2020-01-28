@@ -7,7 +7,7 @@
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "./build",
+    "outDir": "./dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
@@ -20,12 +20,19 @@
     "baseUrl": ".",
     "paths": {
       "@core/*": ["src/core/*"],
+      "@const/*": ["src/const/*"],
       "@config/*": ["src/config/*"],
       "@entity/*": ["src/entity/*"],
       "@utils/*": ["src/utils/*"]
     }
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "logs/**/*"
+  ],
+  "include": [
+    "src/**/*",
+    "bin/**/*",
+    "app.ts"
   ]
 }

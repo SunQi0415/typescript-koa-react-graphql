@@ -1,5 +1,5 @@
 const redisEnvConfig = {
-  dev: {
+  development: {
     port: 6379, // Redis port
     host: "127.0.0.1", // Redis host
     ttl: 60 * 60 * 24, // 过期时间
@@ -23,8 +23,8 @@ const redisEnvConfig = {
 }
 
 // 不同环境设置不同配置
-type NODE_ENV = 'dev' | 'test' | 'production'
-const ENV: keyof typeof redisEnvConfig = (process.env.NODE_ENV as NODE_ENV) || 'dev';
+type NODE_ENV = 'development' | 'test' | 'production'
+const ENV: keyof typeof redisEnvConfig = (process.env.NODE_ENV as NODE_ENV) || 'development';
 let redisConfig  = redisEnvConfig[ENV];
 
 

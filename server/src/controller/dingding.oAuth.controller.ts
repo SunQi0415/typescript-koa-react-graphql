@@ -1,23 +1,23 @@
 import { Context } from 'koa'
-import http from '../utils/request';
-import { Controller, Get, Post } from '../core/routerDecorator/router.decorator';
+import http from '@utils/request';
+import { Controller, Get, Post } from '@core/routerDecorator/router.decorator';
 import {
   DINGDING_GET_TICKET,
   DINGDING_GEN_QRCODE,
   DINGDING_QRCODE_STATUS,
   DINGDING_GET_USERINFO,
   DINGDING_JS_CONFIG, 
-} from '../const/api';
+} from '@const/api';
 import { 
   getTicketRequest,
   getTicketResponse,
   genQRCodeRequest,
   qrCodeStatusRequest,
   jsConfigRequest,
-} from '../const/interfaces/dingding.interface';
-import { dingdingConfig } from '../config/oAuth.config';
+} from '@const/interfaces/dingding.interface';
+import { dingdingConfig } from '@config/oAuth.config';
 import { getManager, getRepository } from "typeorm";
-import { UserDing } from '../entity/mysql/user.dingding.entity';
+import { UserDing } from '@entity/mysql/user.dingding.entity';
 
 @Controller('/api/user/dingding')
 export default class {

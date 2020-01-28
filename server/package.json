@@ -4,8 +4,9 @@
    "description": "",
    "main": "index.js",
    "scripts": {
-      "start": "ts-node src/index.ts",
-      "dev": "./node_modules/.bin/nodemon"
+      "dev": "nodemon",
+      "start": "pm2 start ecosystem.config.js --env production",
+      "restart": "pm2 restart ecosystem.config.js --env production"
    },
    "keywords": [],
    "author": "",
@@ -45,6 +46,7 @@
       "@types/node": "^8.0.29",
       "nodemon": "^2.0.2",
       "ts-node": "3.3.0",
+      "tsconfig-paths": "^3.9.0",
       "typescript": "3.3.3333"
    }
 }

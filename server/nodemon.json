@@ -8,9 +8,9 @@
   "watch": [
     "src/**/*"
   ],
-  "exec": "ts-node ./bin/index.ts",
+  "exec": "ts-node -r tsconfig-paths/register ./bin/index.ts",
   "env": {
-      "NODE_ENV": "dev"
+      "NODE_ENV": "development"
   },
   "ext": "js json ts tsx"
 }

@@ -1,7 +1,7 @@
 import { Context } from 'koa'
-import { Controller, Get, Post } from '../core/routerDecorator/router.decorator';
+import { Controller, Get, Post } from '@core/routerDecorator/router.decorator';
 import { getManager, getRepository } from "typeorm";
-import { User } from '../entity/mysql/user.entity';
+import { User } from '@entity/mysql/user.entity';
 import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
